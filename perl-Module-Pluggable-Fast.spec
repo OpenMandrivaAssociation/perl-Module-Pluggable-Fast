@@ -17,7 +17,6 @@ Buildrequires:	perl-devel
 Buildrequires:	perl(UNIVERSAL::exports)
 Buildrequires:	perl(UNIVERSAL::require)
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module is similar to Module::Pluggable but instantiates plugins as soon as
