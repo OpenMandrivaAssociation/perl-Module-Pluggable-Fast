@@ -1,7 +1,7 @@
 %define module	Module-Pluggable-Fast
 %define name	perl-%{module}
 %define version 0.18
-%define release %mkrel 5
+%define release %mkrel 7
 
 Name:		%{name}
 Version:	%{version}
