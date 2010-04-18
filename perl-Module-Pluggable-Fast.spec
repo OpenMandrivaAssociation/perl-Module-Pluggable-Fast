@@ -1,5 +1,5 @@
 %define upstream_name	 Module-Pluggable-Fast
-%define upstream_version 0.18
+%define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Fast plugins with instantiation
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
@@ -31,7 +31,7 @@ they're found, useful for code generators like Class::DBI::Loader.
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot}
@@ -45,4 +45,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/Module
 %{_mandir}/*/*
-
