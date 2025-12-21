@@ -11,6 +11,7 @@ Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(UNIVERSAL::exports)
 BuildRequires:	perl(UNIVERSAL::require)
