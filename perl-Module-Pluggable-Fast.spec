@@ -2,14 +2,14 @@
 %define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Fast plugins with instantiation
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/Module-Pluggable-Fast
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Module-Pluggable-Fast-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
