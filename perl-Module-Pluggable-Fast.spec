@@ -1,15 +1,13 @@
 %define upstream_name	 Module-Pluggable-Fast
-%define upstream_version 0.19
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.19
+Release:	6
 
 Summary:	Fast plugins with instantiation
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Module-Pluggable-Fast
-Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Module-Pluggable-Fast-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Module-Pluggable-Fast-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -22,7 +20,7 @@ This module is similar to Module::Pluggable but instantiates plugins as soon as
 they're found, useful for code generators like Class::DBI::Loader.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,8 +44,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.180.0-1mdv2010.0
 + Revision: 401626
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %0.19 fixed license field
 
 * Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.18-8mdv2009.0
 + Revision: 257900
